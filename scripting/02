@@ -1,0 +1,7 @@
+apt-get update >> update_script.log
+apt-get upgrade >> update_script.log
+touch script && chmod 777 script && echo "apt-get update >> update_script.log\napt-get upgrade >> update_script.log" >> script
+crontab -l > tmp
+tmp << 00 04 * * Mon ~/script
+crontab tmp
+rm tmp

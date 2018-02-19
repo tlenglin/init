@@ -1,0 +1,5 @@
+touch script && chmod 777 script && echo 'crontab -l' > new && echo 'cmp --silent tmp new || (mail -s "Crontab modification" root && new > tmp)' > script
+crontab -l > tmp
+echo '0 0 * * * ./script' >> tmp
+crontab tmp
+crontab -l > tmp
