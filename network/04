@@ -1,0 +1,1 @@
+netstat -r | sed '1,4 d; 6, 100d'
