@@ -1,0 +1,3 @@
+w
+who
+netstat -tnpa | grep 'ESTABLISHED.*sshd'

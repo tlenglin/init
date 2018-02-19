@@ -1,0 +1,1 @@
+/home/osboxes/.ssh/id_rsa.pub | dsa.pub > /home/osboxes/.ssh/authorized_keys
